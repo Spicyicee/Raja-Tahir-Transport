@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clients - Transport Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<nav>
+    <div class="logo">
+        <img src="images/imageLOGOo.png
+        " alt="Company Logo">
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Partners</a>
+        <a href="truck.html" >Trucks</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+   <header>
+        <h1>Our Services</h1>
+    </header>
+
+<section class="clients-section">
+  <div class="container">
+    <h2>Our Clients & Partners</h2>
+    <p class="clients-intro">
+      Proudly transporting goods for renowned companies across UAE, GCC, and beyond.
+    </p>
+    <div class="clients-grid">
+      <div class="client">
+        <img src="images/imageMabani.png" alt="Mabani Steel Logo">
+        <div class="client-info">
+          <strong>Mabani Steel</strong>
+          <p>Leading designer, fabricator, and supplier of structural steel buildings across GCC, Africa & Asia.</p>
+        </div>
+      </div>
+      <div class="client">
+        <img src="images/imageAggreko.png" alt="Aggreko Logo">
+        <div class="client-info">
+          <strong>Aggreko (JAFZA)</strong>
+          <p>Global provider of modular power generation, heating/cooling, and energy storage solutions.</p>
+        </div>
+      </div>
+      <div class="client">
+        <img src="images/imageCrispo.png" alt="Crispo Logo">
+        <div class="client-info">
+          <strong>Crispo</strong>
+          <p>UAE-based manufacturer of snacks like popcorn, nuts & corn-based treats.</p>
+        </div>
+      </div>
+      <div class="client">
+        <img src="images/imageTiger.png" alt="Tiger Steel Logo">
+        <div class="client-info">
+          <strong>Tiger Steel Engineering</strong>
+          <p>Established in 1968, delivering complete structural steel engineering and fabrication services.</p>
+        </div>
+      </div>
+      <div class="client">
+        <img src="images/imageGreen.webp" alt="Green Prefab Logo">
+        <div class="client-info">
+          <strong>Green Prefab FZE</strong>
+          <p>Manufacturer of modular prefabricated buildings, security cabins, and portacabins in UAE.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+</body>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+        <div class="footer-column">
+            <img src="images/imageLOGOo.png" alt="Company Logo" class="footer-logo">
+            <p>Raja & Tahir Transport L.L.C</p>
+            <p>Safe, Reliable, and On-Time – Every Time.</p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li>✔ Equipment with Wheels & Motors</li>
+                <li>✔ Raw Materials Transport by Road</li>
+                <li>✔ Fodder & Animal Feed Transport</li>
+                <li>✔ Rental of Loading Lifing & Contruction</li>
+            </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="footer-column">
+            <h3>Transportation Destinations</h3>
+            <ul>
+                <li>✔ Transportation in UAE</li>
+                <li>✔ Transportation in Oman</li>
+                <li>✔ Transportation in Saudi Arabia</li>
+                <li>✔ Transportation in Kuwait</li>
+                <li>✔ Transportation in Bahrain</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Al Qusais, Dubai – UAE</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +971 50 769 5245</p>
+            <p><i class="fa-solid fa-phone"></i> +971 56 449 3910</p>
+            <p><i class="fa-solid fa-envelope"></i> aliabbas110039@outlook.com</p>
+        </div>
+
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // get current page file name
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // get all nav links
+    let navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        // if href matches current page, add active
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+
+</html>
+

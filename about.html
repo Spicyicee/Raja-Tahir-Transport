@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us - Transport Company</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+<nav>
+    <div class="logo">
+        <img src="images/imageLOGOo.png" alt="Company Logo">
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Partners</a>
+        <a href="truck.html">Trucks</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+<header class="page-header-with-bg about-bg">
+    <h1>About Us</h1>
+</header>
+
+
+<div class="about-section container">
+
+    <section class="about-card">
+        <div class="icon"><i class="fas fa-history"></i></div>
+        <h2>Our Story</h2>
+        <p>
+            Founded over 15 years ago in the heart of Dubai, Raja & Tahir Transport L.L.C started with a single truck and a mission to make deliveries safer, faster, and more reliable.
+            From a small family-run business, we’ve grown into a trusted name throughout the UAE and Oman.
+        </p>
+        <img src="images/imageRoad.png" alt="Our fleet on the road" />
+    </section>
+
+    <section class="about-card">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h2>Where We Operate</h2>
+        <p>
+            We serve across the UAE and Oman, including key cities like Dubai, Abu Dhabi, Sharjah, Ajman, Muscat, and Sohar.
+            Our knowledge of routes helps us deliver promptly, no matter the destination.
+        </p>
+        <img src="images/imageRoute1.jpg" alt="Coverage map" />
+    </section>
+
+    <section class="about-card">
+        <div class="icon"><i class="fas fa-truck"></i></div>
+        <h2>What We Deliver</h2>
+        <p>
+            We specialize in transporting foodstuff, heavy goods, and construction materials.
+            Our modern fleet consists of box trucks and trailers ready to handle deliveries of any scale.
+        </p>
+        <img src="images/imageDeliver.jpg" alt="Foodstuff delivery" />
+    </section>
+
+    <section class="about-card">
+        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+        <h2>Our Core Values</h2>
+        <ul>
+            <li><strong>Safety:</strong> Your cargo is handled with care from start to finish.</li>
+            <li><strong>Punctuality:</strong> We respect deadlines and deliver as promised.</li>
+            <li><strong>Customer Satisfaction:</strong> We value our customers as partners and strive to exceed expectations.</li>
+        </ul>
+    </section>
+
+    <section class="about-card">
+        <div class="icon"><i class="fas fa-eye"></i></div>
+        <h2>Looking Ahead</h2>
+        <p>
+            Over the next decade, we aim to grow our network, expand our fleet, and build lasting relationships with new customers.
+            With dedication and a people-first approach, we’re driving towards a brighter future.
+        </p>
+    </section>
+
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // get current page file name
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // get all nav links
+    let navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        // if href matches current page, add active
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+        <div class="footer-column">
+            <img src="images/imageLOGOo.png" alt="Company Logo" class="footer-logo">
+            <p>Raja & Tahir Transport L.L.C</p>
+            <p>Safe, Reliable, and On-Time – Every Time.</p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li>✔ Equipment with Wheels & Motors</li>
+                <li>✔ Raw Materials Transport by Road</li>
+                <li>✔ Fodder & Animal Feed Transport</li>
+                <li>✔ Rental of Loading Lifing & Contruction</li>
+            </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="footer-column">
+            <h3>Transportation Destinations</h3>
+            <ul>
+                <li>✔ Transportation in UAE</li>
+                <li>✔ Transportation in Oman</li>
+                <li>✔ Transportation in Saudi Arabia</li>
+                <li>✔ Transportation in Kuwait</li>
+                <li>✔ Transportation in Bahrain</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Al Qusais, Dubai – UAE</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +971 50 769 5245</p>
+            <p><i class="fa-solid fa-phone"></i> +971 56 449 3910</p>
+            <p><i class="fa-solid fa-envelope"></i> aliabbas110039@outlook.com</p>
+        </div>
+
+    </div>
+</footer>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trucks - Transport Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<nav>
+    <div class="logo">
+        <img src="images/imageLOGOo.png" alt="Company Logo">
+    </div>
+    <div class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Partners</a>
+        <a href="truck.html">Trucks</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Header with Truck Background -->
+<header class="page-header-with-bg truck-bg">
+    <h1>Our Fleet of Modern Trucks</h1>
+</header>
+
+<!-- Fleet Section (unchanged) -->
+<section class="fleet-container">
+
+    <div class="truck-card">
+        <img src="images/ImageHeavy.jpg" alt="Heavy Haul Truck" class="truck-img">
+        <div class="truck-info">
+            <h3>Heavy Haul Trucks</h3>
+            <p>Built for transporting massive industrial machinery and oversized loads across long distances with maximum stability and safety.</p>
+        </div>
+    </div>
+
+    <div class="truck-card reverse">
+        <img src="images/imageConstruction.jpg" alt="Flatbed Truck" class="truck-img">
+        <div class="truck-info">
+            <h3>Flatbed Trucks</h3>
+            <p>Ideal for carrying construction materials, large containers, and awkwardly shaped cargo that require open, versatile transport.</p>
+        </div>
+    </div>
+
+    <div class="truck-card">
+        <img src="images/imageChips.jpg" alt="Carton Delivery Truck" class="truck-img">
+        <div class="truck-info">
+            <h3>Carton Delivery Trucks</h3>
+            <p>Specially designed for transporting packed goods like food cartons, beverages, and retail products efficiently and securely.</p>
+        </div>
+    </div>
+
+    <div class="truck-card reverse">
+        <img src="images/imageTire.jpg" alt="Open Side Box Truck" class="truck-img">
+        <div class="truck-info">
+            <h3>Open-Side Box Trucks</h3>
+            <p>Secure yet easy-to-load transport for bulk items such as tires, sacks, or packaged goods, ensuring safe delivery in any weather.</p>
+        </div>
+    </div>
+
+    <div class="truck-card">
+        <img src="images/imageLabour.jpg" alt="Labour Accommodation Transport" class="truck-img">
+        <div class="truck-info">
+            <h3>Labour Accommodation Transport</h3>
+            <p>Specialized trailers for safely delivering prefabricated labour rooms, site offices, and portable cabins to construction sites.</p>
+        </div>
+    </div>
+
+    <div class="truck-card reverse">
+        <img src="images/imageSafeLoad.jpg" alt="Covered Cargo Trucks" class="truck-img">
+        <div class="truck-info">
+            <h3>Covered Cargo Trucks</h3>
+            <p>Perfect for transporting materials such as sand, gravel, or palletized goods while keeping them safe from the elements.</p>
+        </div>
+    </div>
+
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // get current page file name
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // get all nav links
+    let navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        // if href matches current page, add active
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+</body>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+        <div class="footer-column">
+            <img src="images/imageLOGOo.png" alt="Company Logo" class="footer-logo">
+            <p>Raja & Tahir Transport L.L.C</p>
+            <p>Safe, Reliable, and On-Time – Every Time.</p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li>✔ Equipment with Wheels & Motors</li>
+                <li>✔ Raw Materials Transport by Road</li>
+                <li>✔ Fodder & Animal Feed Transport</li>
+                <li>✔ Rental of Loading Lifing & Contruction</li>
+            </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="footer-column">
+            <h3>Transportation Destinations</h3>
+            <ul>
+                <li>✔ Transportation in UAE</li>
+                <li>✔ Transportation in Oman</li>
+                <li>✔ Transportation in Saudi Arabia</li>  
+                <li>✔ Transportation in Kuwait</li>
+                <li>✔ Transportation in Bahrain</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Al Qusais, Dubai – UAE</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +971 50 769 5245</p>
+            <p><i class="fa-solid fa-phone"></i> +971 56 449 3910</p>
+            <p><i class="fa-solid fa-envelope"></i> aliabbas110039@outlook.com</p>
+        </div>
+
+    </div>
+</footer>
+
+</html>

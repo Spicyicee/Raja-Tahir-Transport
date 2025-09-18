@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Transport Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<nav>
+    <div class="logo">
+        <img src="images/imageLOGOo.png" alt="Company Logo">
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Partners</a>
+        <a href="truck.html">Trucks</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<header class="hero-header">
+    <div class="hero-text">
+        <h1>RAJA & TAHIR TRANSPORT L.L.C</h1>
+        <p>15+ Years of Trusted Deliveries Across UAE & Oman</p>
+        <a href="contact.html" class="cta-btn">Get a Quote</a>
+    </div>
+
+    <div class="hero-images">
+        <div class="hero-img img1">
+            <img src="images/imageIndex.jpg" alt="Truck Delivery">
+        </div>
+        <div class="hero-img img2">
+            <img src="images/imageIndex2.jpg" alt="Warehouse">
+        </div>
+        <div class="hero-img img3">
+            <img src="images/imageIndex3.jpg" alt="Logistics">
+        </div>
+    </div>
+</header>
+
+
+
+   <div class="about-company">
+  <h2>About Raja & Tahir Transport L.L.C</h2>
+  <p>
+    Founded over 15 years ago, Raja & Tahir Transport L.L.C has established itself as a trusted leader in logistics and transportation across the UAE and Oman. We specialize in delivering a wide range of goods including foodstuff, labor cabins, steel and accessories, tires, and security cabins. Our commitment to excellence and customer satisfaction has helped us grow a strong reputation in the industry.
+  </p>
+  <p>
+    What sets us apart is our unwavering focus on safety and punctuality. With a modern fleet of trucks and highly experienced drivers, we ensure your shipments reach their destinations securely and on time, every time.
+  </p>
+
+  <div class="vision-mission-container">
+    <div class="vision">
+      <h3>Our Vision</h3>
+      <p>
+        To be the premier transport and logistics company in the Gulf region, renowned for reliability, safety, and outstanding customer service.
+      </p>
+    </div>
+    <div class="mission">
+      <h3>Our Mission</h3>
+      <p>
+        To provide timely, safe, and cost-effective transportation solutions that exceed our clients’ expectations, leveraging our expertise and dedication to continuous improvement.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="why-choose-us">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <div class="choose-grid">
+      
+      <div class="choose-item">
+        <div class="icon-circle">
+          <img src="images/container.png" alt="Reliable Transport Icon" />
+        </div>
+        <h3>Reliable Transport</h3>
+        <p>We ensure your goods reach safely and on time, every time.</p>
+      </div>
+      
+      <div class="choose-item">
+        <div class="icon-circle">
+          <img src="images/clock.png" alt="On-Time Delivery Icon" />
+        </div>
+        <h3>On-Time Delivery</h3>
+        <p>Our punctuality is a promise, not just a claim.</p>
+      </div>
+      
+      <div class="choose-item">
+        <div class="icon-circle">
+          <img src="images/handshake.png" alt="Safe & Secure Icon" />
+        </div>
+        <h3>Safe & Secure</h3>
+        <p>We handle your shipments with the utmost care and security.</p>
+      </div>
+      
+      <div class="choose-item">
+        <div class="icon-circle">
+          <img src="images/money-banking.png" alt="Affordable Pricing Icon" />
+        </div>
+        <h3>Affordable Pricing</h3>
+        <p>Competitive rates with no compromise on quality.</p>
+      </div>
+      
+      <div class="choose-item">
+        <div class="icon-circle">
+          <img src="images/customer-support.png" alt="24/7 Support Icon" />
+        </div>
+        <h3>24/7 Support</h3>
+        <p>We’re always here to assist you, anytime you need.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="customer-reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews-container">
+    <div class="review-item">
+      <p>"I’ve been using Raja & Tahir Transport for over a year now, and they never disappoint. Deliveries always arrive on time, and their drivers are very professional."</p>
+      <div class="stars">★★★★★</div>
+      <span>- Ahmed K.</span>
+    </div>
+    <div class="review-item">
+      <p>"Great service with friendly staff! They helped me with some last-minute changes and made the whole process really smooth."</p>
+      <div class="stars">★★★★★</div>
+      <span>- Waqqar S.</span>
+    </div>
+    <div class="review-item">
+      <p>"I’m really impressed by how careful they handle the shipments. It feels like they genuinely care about their customers."</p>
+      <div class="stars">★★★★★</div>
+      <span>- Jamil H.</span>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // get current page file name
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // get all nav links
+    let navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        // if href matches current page, add active
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>    
+</body>
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+        <div class="footer-column">
+            <img src="images/imageLOGO.png" alt="Company Logo" class="footer-logo">
+            <p>Raja & Tahir Transport L.L.C</p>
+            <p>Safe, Reliable, and On-Time – Every Time.</p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li>✔ Equipment with Wheels & Motors</li>
+                <li>✔ Raw Materials Transport by Road</li>
+                <li>✔ Fodder & Animal Feed Transport</li>
+                <li>✔ Rental of Loading Lifing & Contruction</li>
+            </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="footer-column">
+            <h3>Transportation Destinations</h3>
+            <ul>
+                <li>✔ Transportation in UAE</li>
+                <li>✔ Transportation in Oman</li>
+                <li>✔ Transportation in Saudi Arabia</li>
+                <li>✔ Transportation in Kuwait</li>
+                <li>✔ Transportation in Bahrain</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Al Qusais, Dubai – UAE</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +971 50 769 5245</p>
+            <p><i class="fa-solid fa-phone"></i> +971 56 449 3910</p>
+            <p><i class="fa-solid fa-envelope"></i> aliabbas110039@outlook.com</p>
+        </div>
+
+    </div>
+</footer>
+
+</html>

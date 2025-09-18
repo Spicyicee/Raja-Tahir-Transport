@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Transport Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="images/imageLogoo.png" alt="Company Logo">
+    </div>
+    <div class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Partners</a>
+        <a href="truck.html">Trucks</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+
+    <!-- Header Section -->
+<header class="page-header-with-bg contact-bg">
+    <h1>Contact Us</h1>
+</header>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        
+        <div class="contact-info">
+    <div class="info-item">
+        <i class="fa-solid fa-building"></i>
+        <div>
+            <h4>Address:</h4>
+            <p>Seventh Floor, Al Qusais Plaza, Al Qusais Industrial Area 2, Al Qusais, Dubai UAE</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+            <h4>Call Us:</h4>
+            <p>+971 50 769 5245 | +971 56 449 3910</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+            <h4>Mail Us:</h4>
+            <p>aliabbas110039@outlook.com</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <i class="fa-solid fa-clock"></i>
+        <div>
+            <h4>Monday - Friday:</h4>
+            <p>07:00 – 21:00</p>
+        </div>
+    </div>
+
+ <div class="info-item">
+    <a href="https://wa.me/971564493910" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div>
+        <h4>WhatsApp Us:</h4>
+        <p>Click to chat instantly</p>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+        <!-- Right Side Form -->
+        <div class="quoteUs">
+            <h2>Get Free Quote Now</h2>
+            <form action="https://formspree.io/f/mvgbjeze" method="POST">
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+                <input type="tel" name="phone" placeholder="05XXXXXXXX*" 
+                       pattern="[0-9]{10}" maxlength="10" required>
+                <textarea name="message" placeholder="Message*" required></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=25.281231955653798,55.387893388955256&hl=en&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // get current page file name
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // get all nav links
+    let navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        // if href matches current page, add active
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+</body>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+        <div class="footer-column">
+            <img src="images/imageLOGOo.png" alt="Company Logo" class="footer-logo">
+            <p>Raja & Tahir Transport L.L.C</p>
+            <p>Safe, Reliable, and On-Time – Every Time.</p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li>✔ Equipment with Wheels & Motors</li>
+                <li>✔ Raw Materials Transport by Road</li>
+                <li>✔ Fodder & Animal Feed Transport</li>
+                <li>✔ Rental of Loading Lifing & Contruction</li>
+            </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div class="footer-column">
+            <h3>Transportation Destinations</h3>
+            <ul>
+                <li>✔ Transportation in UAE</li>
+                <li>✔ Transportation in Oman</li>
+                <li>✔ Transportation in Saudi Arabia</li>
+                <li>✔ Transportation in Kuwait</li>
+                <li>✔ Transportation in Bahrain</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h3>Connect with Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Al Qusais, Dubai – UAE</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +971 50 769 5245</p>
+            <p><i class="fa-solid fa-phone"></i> +971 56 449 3910</p>
+            <p><i class="fa-solid fa-envelope"></i> aliabbas110039@outlook.com</p>
+        </div>
+
+    </div>
+</footer>
+</html>

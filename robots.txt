@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rajatahirtransport.site/sitemap.xml
+Sitemap: https://rajatahirtransport.online/sitemap.xml
